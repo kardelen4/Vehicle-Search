@@ -54,4 +54,19 @@ Includes a Playwright test suite that checks
 * Node and npm
 
 
+## Screenshots
 
+### Lighthouse Results
+![Lighthouse test](LighthouseTest.png)
+
+### Desktop Layout
+![Website layout](websitephoto.png)
+
+### Mobile Layout
+![Website mobile layout](websitephoto2.png)
+
+### Dark Mode Example
+![Dark mode screenshot](darkmodephoto.png)
+
+### Test Result Example
+![Passing test](passTestImage.png)
