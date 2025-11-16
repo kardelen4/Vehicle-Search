@@ -42,8 +42,6 @@ Includes a Playwright test suite that checks
 * Error messages  
 * Correct database output  
 
-The tests are inside `tests.spec.js`.
-
 ---
 
 ## Technologies Used
