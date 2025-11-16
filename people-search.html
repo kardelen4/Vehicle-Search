@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<link rel="stylesheet" href="interfaces.css" />
+<script type="module", src="people-search.js"></script>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="content-language" content="en">
+    <meta name="viewport">
+    <title>People Search</title>
+
+    <style>
+        body {
+            background-color: white;
+            color: black;
+        }
+
+    </style>
+</head>
+
+
+
+<body>
+<div id="container">
+    <header>
+        <h1>People Search</h1>
+            <ul class="options">
+                <li>People Search</li>
+                <li><a href='vehicle-search.html'>Vehicle search</a></li>
+                <li><a href='add-vehicle.html'>Add a vehicle</a></li>
+            </ul>
+    </header>
+
+
+    <aside>
+
+        <body>
+            <img
+              src="people-search-image.png" 
+              alt="green and red mask image"
+              width="60"
+              height="60"
+              />
+            </body>
+
+    </aside>
+    <main>
+        <form id="form">
+            <div> <label for="name">Search by driver name</label>
+            <input type="text" id="name" /></div>
+            
+            <div><label for="license">Search by driving license number</label>
+            <input type="text" id="license" /></div>
+
+            <button type = 'submit'>Submit</button>
+
+            <!-- <div class = 'button'> <input type="submit" value="Submit"></div> -->
+
+        </form>
+
+        <div id="message"></div>
+
+        <div id="results"></div>
+
+
+    </main>
+    <footer> 
+        <button id="darkmode">Dark Mode</button>
+    </footer>
+</div>
+</body>

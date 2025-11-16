@@ -1,0 +1,136 @@
+#container {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "sidebar main"
+      "footer footer";
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 2fr 6fr 1fr;
+    gap: 10px;
+    padding: 10px;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  header {
+    grid-area: header;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  aside {
+    grid-area: sidebar;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  main {
+    grid-area: main;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  footer {
+    grid-area: footer;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+img {
+    width: "80%";
+    height: "20%";
+}
+
+h1 {
+text-align: center;
+}
+
+header ul {
+    list-style: none;
+}
+
+.options {
+    display: flex;
+    justify-content: flex-start; 
+    padding: 10;
+}
+
+li a {
+    color:blueviolet;
+}
+
+.options > * {
+    flex: 1 1 30%; 
+}
+
+.options > li > a:hover {
+    text-decoration: underline;
+}
+
+form div {
+    padding-top: 10px;
+}
+
+#message {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#results {
+    flex-grow: 1; 
+    padding: 10px;
+    border: 1px dashed black;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    align-items: stretch;
+    box-sizing: border-box;
+    overflow-y: auto;
+    max-height: 400px;
+}
+
+.result {
+    border: 1px solid black;
+    line-height: 0.4;
+    padding: 10px;
+    padding-top: 10px;
+    width: 200px;
+    height: 200px;
+}
+
+@media (max-width: 500px) {
+    #container {
+        grid-template-areas:
+            "header header"
+            "main main"
+            "sidebar footer";
+        grid-template-columns: 1fr 4fr; 
+        grid-template-rows: auto 5fr 1fr;
+        height: 100%;
+    }
+
+    .options {
+        flex-direction: column; 
+        align-items: flex-start; 
+        padding-left: 10px;
+    }
+
+    header, aside, main, footer {
+        padding: 5px; 
+    }
+
+    aside {
+        grid-area: sidebar; 
+    }
+
+    footer {
+        grid-area: footer; 
+    }
+
+}

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<link rel="stylesheet" href="interfaces.css" />
+<script type="module" src="vehicle-search.js"></script>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="content-language" content="e">
+    `<meta name="viewport">
+    <title>Vehicle Search</title>
+    <style>
+        body {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+
+
+
+<body>
+<div id="container">
+    <header>
+        <h1>Vehicle Search</h1>
+            <ul class="options">
+                <li><a href='people-search.html'>People Search</a></li>
+                <li> Vehicle search </li>
+                <li><a href='add-vehicle.html'>Add a vehicle</a></li>
+            </ul>
+    </header>
+
+
+    <aside>
+
+        <body>
+            <img
+              src="motocycle.jpeg"
+              alt="red motorcyle image"
+              width="50"
+              height="50" />
+            </body>
+
+    </aside>
+    <main>
+        <form id="form">
+            <div> <label for="rego">Search by vehicle registration/plate number</label>
+            <input type="text" id="rego" /></div>
+             
+            <button type = 'submit'>Submit</button>
+
+        </form>
+
+        <div id="message"></div>
+
+        <div id="results"></div>
+
+    </main>
+    <footer> 
+        <button id="darkmode">Dark Mode</button>
+    </footer>
+</div>
+</body>
